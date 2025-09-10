@@ -11,7 +11,20 @@
     "dev:api": "pnpm --filter api dev"
   },
   "devDependencies": {
-    "turbo": "^2.0.0"
+    "@types/node": "^24.3.1",
+    "eslint": "^9.35.0",
+    "tsx": "^4.20.5",
+    "turbo": "^2.0.0",
+    "typescript": "^5.9.2"
   },
-  "workspaces": ["apps/*", "packages/*"]
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "@fastify/helmet": "^13.0.1",
+    "fastify": "^5.6.0",
+    "zod": "^4.1.5"
+  }
 }
