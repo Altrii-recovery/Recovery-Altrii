@@ -1,0 +1,8 @@
+{
+  "build": { "builder": "NIXPACKS" },
+  "run": { "command": "pnpm start" },
+  "envVars": [
+    { "key": "PORT", "value": "4000" }
+  ],
+  "healthcheckPath": "/health"
+}

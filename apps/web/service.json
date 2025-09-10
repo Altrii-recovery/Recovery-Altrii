@@ -1,0 +1,8 @@
+{
+  "build": { "builder": "NIXPACKS" },
+  "run": { "command": "pnpm start" },
+  "envVars": [
+    { "key": "NEXT_PUBLIC_API_BASE_URL", "value": "https://api.staging.altriirecovery.com" }
+  ],
+  "healthcheckPath": "/"
+}
