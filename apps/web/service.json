@@ -2,7 +2,10 @@
   "build": { "builder": "NIXPACKS" },
   "run": { "command": "pnpm start" },
   "envVars": [
-    { "key": "NEXT_PUBLIC_API_BASE_URL", "value": "https://api.staging.altriirecovery.com" }
+    { "key": "RAILWAY_ROOT_DIRECTORY", "value": "apps/web" },
+    { "key": "NIXPACKS_BUILD_CMD", "value": "pnpm build" },
+    { "key": "NIXPACKS_START", "value": "pnpm start" },
+    { "key": "NIXPACKS_NODE_VERSION", "value": "20" }
   ],
   "healthcheckPath": "/"
 }

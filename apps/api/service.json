@@ -2,6 +2,10 @@
   "build": { "builder": "NIXPACKS" },
   "run": { "command": "pnpm start" },
   "envVars": [
+    { "key": "RAILWAY_ROOT_DIRECTORY", "value": "apps/api" },
+    { "key": "NIXPACKS_BUILD_CMD", "value": "pnpm build" },
+    { "key": "NIXPACKS_START", "value": "pnpm start" },
+    { "key": "NIXPACKS_NODE_VERSION", "value": "20" },
     { "key": "PORT", "value": "4000" }
   ],
   "healthcheckPath": "/health"
