@@ -1,7 +1,7 @@
 {
   "name": "recovery-altrii",
   "private": true,
-  "packageManager": "pnpm@9",
+  "packageManager": "pnpm@9.12.3",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",

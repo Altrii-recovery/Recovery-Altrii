@@ -9,5 +9,5 @@
     "lint": "eslint .",
     "test": "echo \"(add tests)\" && exit 0"
   },
-  "packageManager": "pnpm@9"
+  "packageManager": "pnpm@9.12.3"
 }
