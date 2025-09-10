@@ -8,5 +8,6 @@
     "start": "node dist/server.js",
     "lint": "eslint .",
     "test": "echo \"(add tests)\" && exit 0"
-  }
+  },
+  "packageManager": "pnpm@9"
 }

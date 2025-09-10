@@ -2,10 +2,16 @@
 nixPkgs = ["nodejs_20"]
 
 [phases.install]
-cmds = ["pnpm install --frozen-lockfile"]
+# Install pnpm via corepack, then install deps from the workspace root
+cmds = [
+  "npm i -g corepack@0.24.1 && corepack enable",
+  "pnpm -w install --frozen-lockfile"
+]
 
 [phases.build]
-cmds = ["pnpm build"]
+# Build only the API package
+cmds = ["pnpm -w --filter api build"]
 
 [start]
-cmd = "pnpm start"
+# Start only the API package
+cmd = "pnpm -w --filter api start"
