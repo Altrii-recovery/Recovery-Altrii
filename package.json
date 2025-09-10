@@ -8,7 +8,11 @@
     "lint": "turbo lint",
     "test": "turbo test",
     "dev:web": "pnpm --filter web dev",
-    "dev:api": "pnpm --filter api dev"
+    "dev:api": "pnpm --filter api dev",
+    "build:api": "pnpm -w --filter api build",
+    "start:api": "pnpm -w --filter api start",
+    "build:web": "pnpm -w --filter web build",
+    "start:web": "pnpm -w --filter web start"
   },
   "devDependencies": {
     "@types/node": "^24.3.1",
