@@ -1,0 +1,17 @@
+{
+  "name": "recovery-altrii",
+  "private": true,
+  "packageManager": "pnpm@9",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "test": "turbo test",
+    "dev:web": "pnpm --filter web dev",
+    "dev:api": "pnpm --filter api dev"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0"
+  },
+  "workspaces": ["apps/*", "packages/*"]
+}

@@ -1,0 +1,15 @@
+node_modules
+.next
+dist
+.out
+.cache
+.DS_Store
+*.log
+coverage
+
+.env
+.env.*
+!.env.example
+apps/**/.env
+apps/**/.env.*
+!apps/**/.env.example
